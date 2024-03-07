@@ -1,4 +1,4 @@
-# user_input.py
+# user_input program 
 
 name = input("Enter your name: ")
 
