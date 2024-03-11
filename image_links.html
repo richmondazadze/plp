@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+    <style>
+        /* Style for the image grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .grid img {
+            max-width: 100%;
+            height: 200px;
+        }
+
+        #menu img {
+            max-width: 60%;
+            height: 350px;
+        }
+
+        #menu li {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Home section -->
+    <section id="home">
+        <h1>Welcome to My Website</h1>
+        <p>Explore the sections below to see images related to different topics.</p>
+        <a href="https://www.newworldencyclopedia.org/entry/Technology" width="99%" height="75%" alt="Technology"></a>
+    </section>
+
+    <!-- Gallery section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="grid">
+            <a href="https://www.nature.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Altja_j%C3%B5gi_Lahemaal.jpg/1200px-Altja_j%C3%B5gi_Lahemaal.jpg" alt="Nature 1"></a>
+            <a href="https://www.nature.com/"><img src="https://blogs.worldbank.org/sites/default/files/styles/hero/public/2022-12/environment_hero.jpg.webp?itok=Hf8gKgjU" alt="Nature 2"></a>
+            <a href="https://www.nature.com/"><img src="https://d19h8kn98xvxar.cloudfront.net/images/_hero/connectwithnature.jpg" alt="Nature 3"></a>
+        </div>
+    </section>
+
+    <!-- Menu section -->
+    <section id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Food"><img src="https://promova.com/content/italian_food_words_26076fb3f5.png" alt="Food 1">Food Item 1</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Food"><img src="https://wohspioneer.org/wp-content/uploads/2024/01/istockphoto-1457433817-612x612-1.jpg" alt="Food 2">Food Item 2</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Food"><img src="https://imageproxy.wolt.com/venue/6232faaafd94b762808350de/ebcc50b6-a903-11ec-8d84-92cd96cd4d02_habib3.jpg" alt="Food 3">Food Item 3</a></li>
+        </ul>
+    </section>
+</body>
+</html>
