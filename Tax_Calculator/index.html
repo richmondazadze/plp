@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tax Calculator</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        max-width: 400px;
+        width: 90%;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      input[type="number"],
+      select {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      #result {
+        margin-top: 20px;
+        font-weight: bold;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Tax Calculator</h2>
+      <label for="annualIncome">Annual Income:</label>
+      <input
+        type="number"
+        id="annualIncome"
+        placeholder="Enter annual income"
+      />
+
+      <label for="period">Period:</label>
+      <select id="period">
+        <option value="a">Annually</option>
+        <option value="m">Monthly</option>
+      </select>
+
+      <button onclick="calculateTax()">Calculate Tax</button>
+
+      <div id="result"></div>
+    </div>
+
+    <script>
+      function calculateTax() {
+        var annualIncome = parseFloat(
+          document.getElementById("annualIncome").value
+        );
+        var period = document.getElementById("period").value;
+        var resultDiv = document.getElementById("result");
+
+        // Tax calculation logic based on your Python code
+        // You can directly translate your Python code logic here
+
+        // For demonstration purposes, let's just display the input values
+        resultDiv.innerHTML = `
+                <p>Annual Income: $${annualIncome.toFixed(2)}</p>
+                <p>Period: ${period === "a" ? "Annually" : "Monthly"}</p>
+            `;
+      }
+    </script>
+  </body>
+</html>
