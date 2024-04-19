@@ -1,0 +1,199 @@
+/* Global Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #fff;
+  padding: 5px 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.topnav {
+  flex: 3;
+  text-align: right;
+}
+
+.topnav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.topnav ul li {
+  display: inline-block;
+  padding-left: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #333;
+}
+
+/* Hero Section Styles */
+#hero {
+  background-color: #343a40;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+#hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+/* About Section Styles */
+#about {
+  background-color: #fff;
+  padding: 100px 0;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Portfolio Section Styles */
+#portfolio {
+  padding: 100px 0;
+}
+
+#portfolio h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#portfolio img {
+  height: 250px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.project {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+.project-details {
+  padding: 20px;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 1.1rem;
+}
+
+.project .btn {
+  display: block;
+  margin-top: 20px;
+}
+
+/* Contact Section Styles */
+#contact {
+  background-color: #fff;
+  padding: 20px 0;
+}
+
+#contact h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+#contact p {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form textarea {
+  height: 150px;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #343a40;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #495057;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1.5rem;
+}
