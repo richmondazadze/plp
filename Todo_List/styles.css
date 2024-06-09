@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+body {
+    font-family: 'Gochi Hand', cursive;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #333;
+}
+
+@media only screen and (min-width: 500px) {
+    body {
+        min-height: 100vh;
+    }
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.heading__img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.heading__title {
+    transform: rotate(-3deg);
+    background-color: #ffd800;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+@media only screen and (min-width: 500px) {
+    .heading__title {
+        font-size: 28px;
+    }
+}
+
+.form__label {
+    margin-bottom: 10px;
+}
+
+.form__input {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.form__input:focus {
+    border-color: #333;
+}
+
+@media only screen and (min-width: 500px) {
+    .form__input {
+        width: calc(100% - 60px);
+    }
+}
+
+.button {
+    padding: 10px 20px;
+    transform: rotate(2deg);
+    font-family: 'Gochi Hand', cursive;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to right, #ffd800, #ffc100);
+}
+
+.button span {
+    background-color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #ffd800;
+    border-radius: 5px;
+}
+
+.button:active, .button:focus {
+    outline: none;
+}
+
+.toDoList {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.toDoList li {
+    padding: 10px;
+}
+
+.toDoList li:hover {
+    text-decoration: line-through;
+    text-decoration-style: wavy;
+    color: #888;
+}
